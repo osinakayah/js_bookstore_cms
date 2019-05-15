@@ -8,7 +8,8 @@ const initialState = {
 export const filter = (state = initialState, action) => {
     switch (action.type) {
         case CHANGE_FILTER:
-            return Object.assign({}, state, {filter :action.data}  )
+            return {...state, ...{filter: action.data}};
+            // return Object.assign({}, state, {filter :action.data}  )
         default:
             return state
     }

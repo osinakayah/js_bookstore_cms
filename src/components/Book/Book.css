@@ -1,4 +1,4 @@
-.Book {
+.book {
 
     padding: 1% 2% 1% 2%;
 
@@ -11,7 +11,7 @@
     margin: 1% 0 1% 0;
 
 }
-.Book-category{
+.book-category{
     margin: 0;
     width: 49px;
     height: 18px;
@@ -25,11 +25,11 @@
     color: #121212;
 }
 
-.Book-remove {
+.book-remove {
     color: #4386bf
 }
 
-.Book-title {
+.book-title {
     width: 197px;
     height: 29px;
     font-size: 22px;

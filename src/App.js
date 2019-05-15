@@ -7,13 +7,13 @@ import { Navbar } from 'react-bootstrap'
 
 function App() {
     return (
-        <div className="App">
+        <div className="app">
             <Navbar bg="light" expand="lg">
                 <Navbar.Brand href="#home">Bookstore CMS</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
             </Navbar>
 
-            <div className={'App-body'}>
+            <div className={'app-body'}>
 
                 <BooksList/>
                 <BooksForm/>

@@ -11,10 +11,10 @@ const initialState = {
 export const bookstore = (state = initialState, action) => {
     switch (action.type) {
         case CREATE_BOOK:
-            return Object.assign({}, state, {books: state.books.concat(action.data)})
+            return {...state, books: [...state.books, action.data]};
         case REMOVE_BOOK:
             const newBooks = state.books.filter((book) => book.id !== action.data.id);
-            return Object.assign({}, state, {books: newBooks})
+            return {...state, books: [...newBooks]}
         default:
             return state
     }

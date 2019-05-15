@@ -1,6 +1,6 @@
 import { createStore, combineReducers } from 'redux';
-import {bookstore} from './books'
-import { filter } from "./filter";
+import {bookstore} from '../reducers/books'
+import { filter } from "../reducers/filter";
 
 const rootReducer = combineReducers({
     bookstore,

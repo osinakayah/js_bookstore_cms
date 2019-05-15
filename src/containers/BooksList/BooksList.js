@@ -1,11 +1,12 @@
 import React, {Component} from 'react'
-import Book from "../../components/Book/Book";
 import {connect} from "react-redux";
-import {removeBook} from "../../actions";
 import PropTypes from "prop-types";
+
 import { BOOK_CATEGORIES } from "../../logic/book";
 import CategoryFilter from "../../components/CategoryFilter/CategoryFilter";
 import { changeFilter } from "../../actions";
+import {removeBook} from "../../actions";
+import Book from "../../components/Book/Book";
 
 class BooksList extends Component {
     static propTypes = {
@@ -32,15 +33,12 @@ class BooksList extends Component {
     _handleFilterChange = (category) => {
         this.props.dispatchChangeFilter(category);
     }
-    _renderBooks = () => {
-        return this._getBooksToRender().map((book, index) => <Book book={book} key={index} removeBook={this._removeBook}/> );
-    }
 
     render() {
         return (
             <div>
                 <CategoryFilter handleFilterChange={this._handleFilterChange} />
-                {this._renderBooks()}
+                {this._getBooksToRender().map((book, index) => <Book book={book} key={index} removeBook={this._removeBook}/> )}
             </div>
         )
     }
@@ -48,18 +46,14 @@ class BooksList extends Component {
 }
 
 
-const mapStateToProps = (state) => {
-    return {
-        bookstore: state.bookstore,
-        filter: state.filter
-    }
-}
+const mapStateToProps = (state) => ({
+    bookstore: state.bookstore,
+    filter: state.filter
+})
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        dispatchRemoveBook: (book) => dispatch(removeBook(book)),
-        dispatchChangeFilter: (category) => dispatch(changeFilter(category))
-    }
-}
+const mapDispatchToProps = (dispatch) => ({
+    dispatchRemoveBook: (book) => dispatch(removeBook(book)),
+    dispatchChangeFilter: (category) => dispatch(changeFilter(category))
+})
 
 export default connect(mapStateToProps, mapDispatchToProps)(BooksList)

@@ -27,31 +27,21 @@ class BooksForm extends Component {
 
     }
 
-    _handleBookTitleChange = event => {
-        if (event) {
-            event.preventDefault();
-            this.setState({title: event.target.value})
-        }
+    _handleChange = (key, value) => {
+        this.setState({[key]: value})
     }
-    _handleBookCategoriesChange = event => {
-        if (event) {
-            event.preventDefault();
-            this.setState({category: event.target.value})
-        }
-    }
-
 
     render() {
         return (
-            <div className={'BooksForm'}>
-                <h3 className={'BooksForm-heading'}>Add New Book</h3>
+            <div className={'booksform'}>
+                <h3 className={'booksform-heading'}>Add New Book</h3>
                 <Form>
                     <Row>
                         <Col>
-                            <Form.Control placeholder="Book Title" value={this.state.title} onChange={this._handleBookTitleChange}/>
+                            <Form.Control placeholder="Book Title" value={this.state.title} onChange={(event) => this._handleChange('title', event.target.value)}/>
                         </Col>
                         <Col>
-                            <Form.Control as="select" value={this.state.category} onChange={this._handleBookCategoriesChange}>
+                            <Form.Control as="select" value={this.state.category} onChange={(event) => this._handleChange('category', event.target.value)}>
                                 {BOOK_CATEGORIES.map((category, index) => <option value={index} key={index}>{category}</option>)}
                             </Form.Control>
                         </Col>
@@ -67,10 +57,6 @@ class BooksForm extends Component {
     }
 }
 
-const mapStateToProps = (state) => {
-    return {
-    }
-}
 
 const mapDispatchToProps = (dispatch) => {
     return {
@@ -78,4 +64,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(BooksForm)
+export default connect(null, mapDispatchToProps)(BooksForm)
