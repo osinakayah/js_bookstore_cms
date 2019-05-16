@@ -1,15 +1,12 @@
 import { CHANGE_FILTER } from "../actions";
 
-const initialState = {
-    filter: -1
-}
+const initialState = -1
 
 
 export const filter = (state = initialState, action) => {
     switch (action.type) {
         case CHANGE_FILTER:
-            return {...state, ...{filter: action.data}};
-            // return Object.assign({}, state, {filter :action.data}  )
+            return action.data;
         default:
             return state
     }
