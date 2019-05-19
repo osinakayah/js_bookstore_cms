@@ -5,7 +5,7 @@ import BooksForm from "./containers/BooksForm/BooksForm";
 import { Navbar } from 'react-bootstrap'
 
 
-function App() {
+const App = () =>  {
     return (
         <div className="app">
             <Navbar bg="light" expand="lg">

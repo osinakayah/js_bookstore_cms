@@ -3,8 +3,7 @@ import {connect} from "react-redux";
 
 import { BOOK_CATEGORIES } from "../../logic/book";
 import CategoryFilter from "../../components/CategoryFilter/CategoryFilter";
-import { changeFilter } from "../../actions";
-import {removeBook} from "../../actions";
+import { changeFilter, removeBook } from "../../actions";
 import Book from "../../components/Book/Book";
 
 
