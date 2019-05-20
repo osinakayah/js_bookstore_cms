@@ -1,0 +1,44 @@
+.book {
+
+    padding: 1% 2% 1% 2%;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: #E0E0E0;
+    border-radius: 7px;
+
+
+    margin: 1% 0 1% 0;
+
+}
+.book-category{
+    margin: 0;
+    width: 49px;
+    height: 18px;
+    opacity: 0.5;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #121212;
+}
+
+.book-remove {
+    color: #4386bf
+}
+
+.book-title {
+    width: 197px;
+    height: 29px;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.2px;
+    color: #121212;
+    margin-bottom: 1px;
+    margin-top: 12px;
+}
