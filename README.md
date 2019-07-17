@@ -17,7 +17,6 @@ Current version features:
   - [Install](#install)
   - [Usage](#usage)
   - [Maintainers](#maintainers)
-  - [License](#license)
   
   ## Install
 
@@ -36,4 +35,4 @@ Goto `localhost:3000`
 
 ## Maintainers
 
-  [Osinakayah](https://github.com/osinakayah) and [Sanel](https://github.com/sanelca)
+  [Osinakayah](https://github.com/osinakayah) and [Sanelca](https://github.com/sanelca)
