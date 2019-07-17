@@ -14,10 +14,9 @@ Current version features:
 
 - [bookstore-react-redux-app](#bookstore-react-redux-app)
   - [Table of Contents](#table-of-contents)
-  - [Background](#background)
   - [Install](#install)
   - [Usage](#usage)
-  - [Contributing](#contributing)
+  - [Maintainers](#maintainers)
   - [License](#license)
   
   ## Install
