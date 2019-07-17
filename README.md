@@ -22,7 +22,7 @@ Current version features:
 
 Follow these steps:
   - clone this repo
-  - `cd bookstore-react-redux-app`
+  - `cd js_bookstore_cms`
   - `yarn install` or `npm install`
 
 ## Usage
