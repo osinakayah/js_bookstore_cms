@@ -1,7 +1,7 @@
 # Bookstore Manager
 
 > My Bookstore Manager for keeping records of books and genre they belong to. Got a collection of books? You can use Bookstore Manager and archive your books.
-Live url can be found <a href="">here</a>
+Live url can be found <a href="https://osinakayah.github.io/js_bookstore_cms/">here</a>
 
 ## Tech Stacks
 - React
