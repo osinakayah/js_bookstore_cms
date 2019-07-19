@@ -1,27 +1,28 @@
-# js_bookstore_cms
+# Bookstore Manager
 
-> Bookstore CMS App built using React, Redux and React-Redux.
+> My Bookstore Manager for keeping records of books and genre they belong to. Got a collection of books? You can use Bookstore Manager and archive your books.
+Live url <a href=""></a>
 
-Current version features:
+## Tech Stacks
+- React
+- Redux
+- Bootstrap 4
+- CSS
+
+## Current version features:
 
 - User can add books to the list
 - User can remove books
-- User can filter categories
+- User can filter book by genre
 
+## Future features
+- Persist books that has been added using redux persist.
 
-
-## Table of Contents
-
-- [js_bookstore_cms](#js_bookstore_cms)
-  - [Table of Contents](#table-of-contents)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Maintainers](#maintainers)
   
   ## Install
 
 Follow these steps:
-  - clone this repo
+  - Clone this repo
   - `cd js_bookstore_cms`
   - `yarn install` or `npm install`
 
